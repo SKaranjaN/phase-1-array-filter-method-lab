@@ -8,11 +8,11 @@ function findMatching(drivers, item) {
   }
 
 
-function fuzzyMatch(driversArray) {
-  return driversArray.filter(function(driver) {
-    return driver.startsWith('Sa');
-  });
-}
+function fuzzyMatch(drivers, item) {
+    return drivers.filter(driver => driver.startsWith(item));
+    }
+    
+ 
 
 
 
